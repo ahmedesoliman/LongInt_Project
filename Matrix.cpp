@@ -9,6 +9,14 @@
  *
  */
 
+/**
+ * @file Matrix.cpp
+ * @author Mike Boyle
+ * @brief Implementation file for Matrix class
+ * @date 2022-04-18
+ *
+ */
+
 #include <iostream>
 #include <stdexcept>
 #include "Matrix.h"

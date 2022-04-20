@@ -5,15 +5,16 @@
  * UDLList is an unordered (unsorted) list.
  *
  */
-#ifndef DOUBLY_LINKED_LIST_H
-#define DOUBLY_LINKED_LIST_H
+
+#ifndef DOUBLYLINKEDLIST_H
+#define DOUBLYLINKEDLIST_H
 
 #include <string>
 #include "Node.h"
-#include "Iterator.cpp"
+#include "ListIterator.cpp"
 
 template <class T>
-class UDLList
+class DoublyLinkedList
 {
 private:
     // length represents the number of items in the list
@@ -37,17 +38,17 @@ private:
 
     // copyList copies the items from another list into the current list.
     // If the current list already contains nodes, they are first deleted.
-    void copyList(const UDLList<T> &);
+    void copyList(const DoublyLinkedList<T> &);
 
 public:
     // Default constructor
-    UDLList();
+    DoublyLinkedList();
     // Copy constructor
-    UDLList(const UDLList &);
+    DoublyLinkedList(const DoublyLinkedList &);
     // Destructor
-    ~UDLList();
+    ~DoublyLinkedList();
     // Overloaded operatator=
-    const UDLList<T> &operator=(const UDLList &);
+    const DoublyLinkedList<T> &operator=(const DoublyLinkedList &);
     // getLength returns the length of the list
     int getLength() const;
     // isEmpty returns true if there are no nodes in the list
@@ -72,9 +73,9 @@ public:
     // If the same item appears more than once in the list, only the first one is deleted.
     void deleteItem(const T &);
     // iteratorBegin returns an iterator at the first item
-    const Iterator<T> iteratorBegin() const;
+    const ListIterator<T> iteratorBegin() const;
     // iteratorEnd retursn an interator at the last item
-    const Iterator<T> iteratorEnd() const;
+    const ListIterator<T> iteratorEnd() const;
 };
 
 #endif

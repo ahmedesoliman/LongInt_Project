@@ -8,8 +8,7 @@
  * @copyright Copyright (c) 2022
  *
  */
-
-#include "DLList.h"
+#include "DoublyLinkedList.h"
 #include <string>
 #include <sstream>
 #include <iostream>
