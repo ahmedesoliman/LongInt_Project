@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2022
  *
  */
-#ifndef LONGINTH
-#define LONGINTH
+#ifndef LONGINT_H
+#define LONGINT_H
 
 #include "DoublyLinkedList.cpp"
 #include "ListIterator.h"
